@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            background: linear-gradient(45deg, darkred, purple, navy);
+            background-size: 400% 400%;
+            animation: background-shift 12s ease infinite;
+        }
+
+        @keyframes background-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            background-color: white;
+            width: 400px;
+            padding: 40px;
+            border: 3px solid black;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.02) rotateX(2deg);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: black;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            position: relative;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid transparent;
+        }
+
+        .field:nth-child(odd) {
+            background-color: antiquewhite;
+        }
+
+        .field:nth-child(even) {
+            background-color: lightgrey;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            padding-left: 25px;
+            color: black;
+        }
+
+        .field::before {
+            position: absolute;
+            left: 25px;
+            top: 40px;
+            font-size: 16px;
+            z-index: 5;
+        }
+
+        .field:nth-child(2)::before { content: "👤"; }
+        .field:nth-child(3)::before { content: "✉️"; }
+        .field:nth-child(4)::before { content: "🔒"; }
+        .field:nth-child(5)::before { content: "📞"; }
+
+        input {
+            padding: 12px 12px 12px 35px;
+            font-size: 16px;
+            border: 2px solid black;
+            border-radius: 6px;
+            background-color: white;
+            color: black;
+            transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+        }
+
+        input:hover {
+            border-color: darkblue;
+            transform: translate(2px, -2px);
+        }
+
+        input:focus {
+            outline: none;
+            border-color: purple;
+            background-color: lightyellow;
+            transform: scale(1.02) skewX(-2deg);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: purple;
+            transform: translateY(-3px) scale(1.03);
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Register</h1>
+        
+        <div class="field">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter name">
+        </div>
+
+        <div class="field">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter email">
+        </div>
+
+        <div class="field">
+            <label>Password</label>
+            <input type="password" placeholder="Create password">
+        </div>
+
+        <div class="field">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter phone">
+        </div>
+
+        <button type="submit">Submit Form</button>
+    </div>
+
+</body>
+</html>

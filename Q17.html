@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: lightgrey;
+            font-family: sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .main-article {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            background-image: url('https://sc0.blr1.digitaloceanspaces.com/inline/932962-cetboxcooj-1565059872.png');
+            background-size: cover;
+            background-position: center;
+            border: 3px solid black;
+        }
+
+        .title {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: darkred;
+            color: white;
+            padding: 8px 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+
+        .main-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .main-content h1 {
+            color: white;
+            font-size: 32px;
+            margin: 0 0 10px 0;
+            text-shadow: 2px 2px black;
+        }
+
+        .main-content p {
+            color: lightgray;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .cards-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background-color: white;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            border-bottom: 2px solid black;
+        }
+
+        .img-one {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhRywE6Gje4yrTs_Fm7N6_-QqmgsUhVYmi2DnEJi_ep0uEbZaFtWkT7ag&s=10');
+        }
+
+        .img-two {
+            background-image: url('https://res.cloudinary.com/dpxgu0x6f/image/upload/v1779608690/aks-blog-images/1779608690090-ai-trends-2026.webp');
+        }
+
+        .img-three {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkWvwQe34S3Isz0u8avjiRJQHaCyMs1PXXgCBi003k6A&s');
+        }
+
+        .card-text {
+            padding: 15px;
+        }
+
+        .card-text h2 {
+            font-size: 18px;
+            color: black;
+            margin: 0 0 10px 0;
+        }
+
+        .card-text p {
+            font-size: 14px;
+            color: dimgray;
+            margin: 0;
+        }
+
+        @media (max-width: 800px) {
+            .cards-row {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .main-article {
+                height: 350px;
+            }
+
+            .main-content h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="main-article">
+            <div class="title">Breaking News</div>
+            <div class="main-content">
+                <h1>Next-Gen Quantum Computing Center Opens</h1>
+                <p>A new state-of-the-art global research hub scales deep quantum simulation infrastructure to tackle climate and financial models seamlessly.</p>
+            </div>
+        </div>
+
+        <div class="cards-row">
+            <div class="card">
+                <div class="card-image img-one"></div>
+                <div class="card-text">
+                    <h2>Cybersecurity Update</h2>
+                    <p>Global networks implement stricter validation frameworks to combat rising automated data threats.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image img-two"></div>
+                <div class="card-text">
+                    <h2>AI Frameworks</h2>
+                    <p>Developers release minimalist modular development code blocks to enhance layout rendering platforms.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image img-three"></div>
+                <div class="card-text">
+                    <h2>Market Trends</h2>
+                    <p>Tech enterprise shares stabilize as global hardware supply chains adjust to localized processing demands.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Flexbox</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: lightgrey;
+            padding-top: 50px;
+            font-family: sans-serif;
+        }
+
+        .main {
+            background-color: white;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px;
+            border: 5px solid black;
+            outline: 10px solid darkgray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .one {
+            background-color: lightcoral;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid red;
+            outline: 4px solid darkred;
+        }
+
+        .two {
+            background-color: lightblue;
+            width: 240px;
+            height: 220px;
+            padding: 20px;
+            margin: 15px;
+            border: 4px dashed blue;
+            outline: 6px solid navy;
+        }
+
+        .three {
+            background-color: lightgreen;
+            width: 220px;
+            height: 180px;
+            padding: 30px;
+            margin: 25px;
+            border: 6px double green;
+            outline: 8px solid darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="one">
+            <h3>Box One</h3>
+            <p>Small padding and small margin layout</p>
+        </div>
+
+        <div class="two">
+            <h3>Box Two</h3>
+            <p>Medium padding and dashed border format</p>
+        </div>
+
+        <div class="three">
+            <h3>Box Three</h3>
+            <p>Large padding and thick double border layout</p>
+        </div>
+    </div>
+
+</body>
+</html>

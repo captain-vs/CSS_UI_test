@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            background-color: grey;
+            font-family: sans-serif;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 50px;
+            z-index: 2;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: black;
+        }
+
+        main {
+            margin-top: 60px;
+            padding: 20px;
+        }
+
+        .sec-1 {
+            position: relative;
+            height: 300px;
+            width: 100%;
+            background: url('https://www.adobe.com/in/products/illustrator/media_16249e7e9719df685a92c2158f8413e738aa2f4f0.jpg?width=750&format=jpg&optimize=medium');
+            margin-bottom: 20px;
+            z-index: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: 2px solid black;
+        }
+
+        .sec-2 {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            background: url('https://www.datocms-assets.com/103045/1688545481-github.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        .sec-3 {
+            position: sticky;
+            top: 70px;
+            background-color: lightyellow;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: 20px;
+            font-size: 40px;
+            height: 40px;
+            width: 40px;
+            color: blue;
+            z-index: 3;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .grid {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: white;
+            flex: 1;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        .card h2 {
+            font-size: 20px;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: black;
+            font-size: 14px;
+        }
+
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: antiquewhite;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            color: aliceblue;
+            font-size: 28px;
+            border-bottom: 2px solid aliceblue;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        footer {
+            position: static;
+            background-color: lightgrey;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            color: black;
+            border-top: 2px solid black;
+        }
+
+        @media (max-width: 800px) {
+            body {
+                background-color: darkslategrey;
+            }
+
+            header {
+                background-color: coral;
+                color: white;
+            }
+
+            .grid {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .card {
+                background-color: antiquewhite;
+            }
+        }
+
+        @media (orientation: portrait) {
+            h1 {
+                text-align: center;
+                color: gold;
+                border-color: gold;
+            }
+            p {
+                text-align: justify;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+            }
+            h1 {
+                color: orange;
+                border-color: orange;
+            }
+            header {
+                background-color: midnightblue;
+                color: white;
+            }
+            .card {
+                background-color: #222;
+                border-color: white;
+            }
+            .card h2 {
+                color: white;
+            }
+            .card p {
+                color: lightgray;
+            }
+            footer {
+                background-color: #333;
+                color: white;
+                border-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>The Cosmetics Company</header>
+
+    <main>
+        <div class="sec-1">
+            <div class="sec-2"></div>
+        </div>
+
+        <div class="sec-3">
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>Skin Care</h2>
+                <p>Cleansers, toners, serums, moisturizers, and eye creams designed to protect and replenish your natural skin layers.</p>
+            </div>
+            <div class="card">
+                <h2>Makeup</h2>
+                <p>Cosmetics designed to enhance appearance, conceal blemishes, and bring out distinct structural facial features effortlessly.</p>
+            </div>
+            <div class="card">
+                <h2>Fragrance</h2>
+                <p>Premium blended chemical compounds derived from natural ingredients to provide long-lasting refreshing body aromas.</p>
+            </div>
+        </div>
+
+        <p>Cosmetics are substances that are intended for application to the body for cleansing, beautifying, promoting attractiveness, or altering appearance. They are mixtures of chemical compounds derived from either natural sources or created synthetically. Cosmetics have various purposes, including personal and skin care. They can also be used to conceal blemishes and enhance natural features (such as the eyebrows and eyelashes). Makeup can add color to the face, enhance features, or alter appearance to resemble a different person, creature, or object.</p>
+        <p>Some early cosmetics contained harmful ingredients, such as lead, which caused serious health problems and sometimes resulted in death. Modern commercial cosmetics are generally tested for safety but may contain controversial ingredients, such as per- and polyfluoroalkyl substances (PFAS), formaldehyde releasers, and ingredients that cause allergic reactions.</p>
+     
+        <h1>Use</h1>
+     
+        <p>Cosmetics designed for skin care may be used to cleanse, exfoliate and protect the skin, as well as replenish it, using body lotions, cleansers, toners, serums, moisturizers, eye creams, retinol, and balms. Cosmetics designed for more general personal care, such as shampoo, soap, and body wash, can be used to clean the body. Cosmetics can also be designed to add fragrance to the body.</p>
+        <p>Cosmetics designed to enhance one's appearance (makeup) can be used to conceal blemishes, enhance one's natural features, or add color to a person's face. In some cases, more extreme forms of makeup are used for performances, fashion shows, and people in costume and can change the appearance of the face entirely to resemble a different person, creature, or object. Techniques for changing appearance include contouring, which aims to give shape to an area of the face. Some women have described peer pressure to use cosmetics resulting in objectification.</p>
+
+        <h1>History</h1>
+
+        <p>Historically, the absence of regulation of the manufacture and use of cosmetics, as well as the absence of scientific knowledge regarding the effects of various compounds on the human body for much of this time period, led to a number of negative effects upon those who used cosmetics, including deformities, blindness, and, in some cases, death. Although harmless products were used, such as berries and beetroot, many cosmetic products available at this time were still chemically dubious and even poisonous. Examples of the prevalent usage of harmful cosmetics include the use of ceruse (white lead) throughout a number of different cultures, such as during the Renaissance in the West, and blindness caused by the mascara Lash Lure during the early 20th century. During the 19th century, there were numerous incidents of lead poisoning due to the fashion for red and white lead makeup and powder, leading to swelling and inflammation of the eyes, weakened tooth enamel, and blackened skin, with heavy use known to lead to death. Usage of white lead was not confined only to the West, with the white Japanese face makeup known as oshiroi also produced using white lead. In the second part of the 19th century, scientific advances in the production of makeup led to the creation of makeup free of hazardous substances such as lead.</p>

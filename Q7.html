@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body {
+       
+            margin: 0;
+            padding: 0;
+             background-color: lightgrey;
+            color: black;
+        }
+
+        nav {
+            background-color: black;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 300px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            flex: 1;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+        }
+
+     
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 10px;
+                border-radius: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Register</a>
+    </nav>
+       <h1>Products</h1>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://png.pngtree.com/png-clipart/20210606/original/pngtree-3d-beauty-cosmetics-product-design-png-image_6391024.jpg" alt="Headphones">
+            <h2>Cometics</h2>
+            <p>Premium cometics for life</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxF4hKtlt8laoWMmV-9DOLuoA4d8IADE2cnm0vSxXJpYtNvcdRVblSueb&s=10" alt="Watch">
+            <h2>Moisturizing </h2>
+            <p>best for health</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.prod.website-files.com/5ee0a01b09389eebf4c09b45/667c516ff83a3c815973676e_1-Before-Mobile.webp" alt="Sneakers">
+            <h2>Cherry Vanila</h2>
+            <p>free juice </p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJmeQ3L_JeQjzQagjGLV_v6_znVpF9B_g5h-T_nPG10QnBLtXAKISzPkA&s=10" alt="Sneakers">
+            <h2>Shampo</h2>
+            <p>Hair Hash </p>
+        </div>
+    </div>
+
+</body>
+</html>

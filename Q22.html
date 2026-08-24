@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .window {
+            background-color: rgba(255, 255, 255, 0.95);
+            width: 380px;
+            padding: 40px;
+            border: 3px solid black;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        h1 {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 32px;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+            color: black;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px silver;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: black;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        input {
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid black;
+            border-radius: 6px;
+            background-color: white;
+            color: black;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                background-image: none;
+                background-color: lightgrey;
+                padding: 20px;
+            }
+
+            .window {
+                width: 100%;
+                max-width: 340px;
+                padding: 25px;
+                background-color: antiquewhite;
+                box-shadow: none;
+            }
+
+            h1 {
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="window">
+        <h1>Login</h1>
+        
+        <div class="field">
+            <label>Username</label>
+            <input type="text" placeholder="Enter username">
+        </div>
+
+        <div class="field">
+            <label>Password</label>
+            <input type="password" placeholder="Enter password">
+        </div>
+
+        <button>Submit</button>
+    </div>
+
+</body>
+</html>

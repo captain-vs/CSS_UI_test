@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: lightgrey;
+        }
+
+        .profile {
+            background-color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid black;
+        }
+
+        .profile h1 {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 36px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .profile p {
+            font-family: Georgia, serif;
+            font-size: 18px;
+            font-style: italic;
+            color: dimgray;
+        }
+
+        .skills {
+            background-color: antiquewhite;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 3px solid black;
+        }
+
+        .skills h2 {
+            font-family: sans-serif;
+            font-size: 24px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        .skills p {
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            font-weight: bold;
+            color: darkblue;
+            word-spacing: 10px;
+        }
+
+        .heading {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 28px;
+            margin: 40px 0 20px 0;
+            color: black;
+            text-shadow: 2px 2px silver;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: white;
+            flex: 1;
+            padding: 25px;
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: gray;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile">
+        <h1>Captain</h1>
+        <p>Full Stack Web Developer & UI Designer</p>
+    </div>
+
+    <div class="skills">
+        <h2>My Skillset</h2>
+        <p>HTML5 CSS3 JavaScript Flexbox VS-Code Git</p>
+    </div>
+
+    <h2 class="heading">Recent Projects</h2>
+
+    <div class="container">
+        <div class="card">
+            <h3>E-Commerce Platform</h3>
+            <p>A responsive shopping application featuring custom product showcase cards grid systems built entirely with CSS flex</p>
+        </div>
+
+        <div class="card">
+            <h3>Weather Dashboard</h3>
+            <p>An interactive system that tracks global meteorological data and swaps visual interface themes dynamically via media.</p>
+        </div>
+
+        <div class="card">
+            <h3>Task Manager Tool</h3>
+            <p>A clean minimalist productivity workspace designed to organize schedule structures with flexible cross-monitor alignment.</p>
+        </div>
+    </div>
+
+</body>
+</html>

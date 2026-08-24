@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: lightgrey;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .gallery {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .item {
+            width: 23%;
+            background-color: white;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 1000px) {
+            .item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .item {
+                width: 90%;
+            }
+            .gallery {
+                padding: 10px;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Photo Gallery</h1>
+
+    <div class="gallery">
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRdHOQ0XfgjuaHKuOqSh5SPdgXlLqaglNPxc363VE3aKripwfXirxXJ1gV&s=10" alt="Landscape">
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfOSkOkY1K3Y7GY7Q9NxQLx__UUd0NNoqQlZmevVaDMxozHaPkDvvNKWSJ&s=10" alt="Nature">
+        </div>
+        <div class="item">
+            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/national-gallery-of-modern-art-mumbai-maharashtra-2-attr-hero?qlt=82&ts=1742163298634" alt="Forest">
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9gloCbhKO0J6b2VBJS7_r3gHLqxPJ8H4jJCGVfg90SDyO-pJMRt08qs_g&s=10" alt="Mountains">
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTNR6lV_xeuxuAAlPTohXOEZBuMG7r2m1uAeRJGNN-iTNOLk0Rhr35P_c6&s=10" alt="Sunlight">
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5cf6zMNxdXA3KJZT9dlHNI52TWSYhzSwPmANtuTlxIYu-YF9Rg8SMihFX&s=10" alt="Hills">
+        </div>
+        <div class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/National_Portrait_Gallery%2C_London%2C_June_2023_34.jpg/330px-National_Portrait_Gallery%2C_London%2C_June_2023_34.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Meadow">
+        </div>
+        <div class="item">
+            <img src="https://thumbs.dreamstime.com/b/mock-up-poster-frame-modern-interior-background-gallery-wall-green-living-room-scandinavian-boho-style-mock-up-poster-frame-193464053.jpg" alt="Trees">
+        </div>
+    </div>
+
+</body>
+</html>

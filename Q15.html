@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        nav {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            max-width: 400px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                background-image: url("https://pngtree.com");
+                color: black;
+            }
+            nav {
+                background-color: white;
+            }
+            nav a {
+                color: black;
+            }
+            .card {
+                background-color: antiquewhite;
+                border: 2px solid black;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-image: url("https://gstatic.com");
+                color: white;
+            }
+            nav {
+                background-color: black;
+            }
+            nav a {
+                color: white;
+            }
+            .card {
+                background-color: darkslategrey;
+                border: 2px solid white;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h1>System Theme Detection</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>Dynamic Content Card</h2>
+            <p>This layout modifies backgrounds, navigation structures</p>
+        </div>
+    </div>
+
+</body>
+</html>

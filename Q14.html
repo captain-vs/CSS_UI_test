@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .aqua {
+            display: block;
+            color: black;
+        }
+
+        .green {
+            display: none;
+        }
+
+        @media (orientation: portrait) {
+            body {
+                background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20240919/pngtree-a-background-of-orange-blue-and-yellow-gradients-with-gritty-appearance-image_16233934.jpg");
+            }
+            .aqua {
+                display: block;
+                text-align: center;
+            }
+            .green {
+                display: none;
+            }
+        }
+
+        @media (orientation: landscape) {
+            body {
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe9Bi7jl_KM9yUIz_v6DujBOWNGzMtNNSSttOE6rfb2OZtq88gqBhkaoCQ&s=10");
+            }
+            .aqua {
+                display: none;
+            }
+            .green {
+                display: block;
+                color: white;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="aqua">Heading 1</h1>
+    <h2 class="green">Heading 2</h2>
+
+</body>
+</html>
